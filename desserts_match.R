@@ -32,3 +32,6 @@ for (i in fav_desserts$Favorite_dessert) {
     print(paste(i, " is in the iconic list"))
   }  
 }
+
+
+inner_join(dessert_listing, fav_desserts, join_by(Favorite_dessert == dessert))
